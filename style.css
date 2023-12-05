@@ -1,0 +1,49 @@
+ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav{
+  
+  background: tan;
+  padding: 12px;
+}
+
+li{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 1 1 90px; /* grow shrink basis(how big it is going to be) */
+  background: lightblue;
+}
+
+main {
+  flex: 1 1 320px;
+  background: lightblue;
+}
+
+footer {
+  flex: 1 1 90px;
+  background: sienna;
+}
+
+/* media query */
+@media all and (max-width: 600px) {
+  
+  ul {
+    flex-direction: column;
+  }
+  li {
+    flex: 1 1 48px;
+  }
+  
+}
